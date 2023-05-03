@@ -1253,8 +1253,8 @@ char * timeset()
 #if USG || AUX || SMOS || HPUX8 || XENIX
 /** Rename a file **/
 int rename(file1, file2)
-char * file1;				/* Old file name		*/
-char * file2;				/* New file name		*/
+const char * file1;				/* Old file name		*/
+const char * file2;				/* New file name		*/
 {
 	struct stat buf1;
 	struct stat buf2;
